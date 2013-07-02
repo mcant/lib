@@ -8,6 +8,6 @@ function validNumber(e){
     if(!er.exec(e.value))     
         return true;
     else 
-        e.value = e.value.replace(er,'')
+        e.value = e.value.replace(er,'');
     return false;
 }
