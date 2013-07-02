@@ -1,6 +1,6 @@
 /**
  * Email validation
- * How to use: <input type="text" onbur="validNumber(this)" />
+ * How to use: <input type="text" onb/ur="validNumber(this)" />
  */
 
 function validEmail(e){
