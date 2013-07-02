@@ -1,7 +1,7 @@
-/*
- * E.g. in http://www.domain.com?q=0 use 
- * query_string('q')
- * will	return: 0
+/**
+ * Get query string with Javascript
+ * E.g. in http://www.domain.com?q=0
+ * How to use: queryString('q')
  */
 
 function queryString(p){
