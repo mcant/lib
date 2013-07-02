@@ -4,11 +4,11 @@
  * will	return: 0
  */
 
-function query_string(param){
-	param = param.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
-	var rgx_s = "[\\?&]" + param + "=([^&#]*)";
-	var rgx = new RegExp(rgx_s);
-	var results = rgx.exec(window.location.search);
+function queryString(p){
+	p = p.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+	var rgx = "[\\?&]" + param + "=([^&#]*)";
+	var re = new RegExp(rgx);
+	var results = re.exec(window.location.search);
 	if(results == null)
 		return "";
 	else

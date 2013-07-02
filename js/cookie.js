@@ -1,9 +1,9 @@
 /*
- * E.g. read_cookie("name")
+ * E.g. readCookie("name")
  */
 
-function read_cookie(name){
-	var cookie_value = '';
+function readCookie(name){
+	var valueCookie = '';
 	var search = name + '=';
 	if(document.cookie.length > 0) {
 		offset = document.cookie.indexOf(search);
@@ -11,17 +11,17 @@ function read_cookie(name){
 			offset += search.length;
 			end = document.cookie.indexOf(';', offset);
 		if (end == -1) end = document.cookie.length;
-			cookie_value = unescape(document.cookie.substring(offset, end))
+			valueCookie = unescape(document.cookie.substring(offset, end))
 		}
 	} 
-	return cookie_value;
+	return valueCookie;
 }
 
 /*
- * E.g. new_cookie("name", "value", 24)
+ * E.g. newCookie("name", "value", 24)
  */
 
-function new_cookie(name, value, hours){
+function newCookie(name, value, hours){
 	if(readCookie(name) == '') {
 		var expire = '';
 		if(hours != null){
