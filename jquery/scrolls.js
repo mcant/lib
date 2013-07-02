@@ -22,7 +22,7 @@ function scrollTo_ancor(distance){
 */
 
 function scroll_onLoad(){
-	var url = document.location.href;
+    var url = document.location.href;
     var str_hash = url.indexOf('#')+1;
     var hash = url.slice(str_hash,url.length);
     if(url.match(/#/)) {
